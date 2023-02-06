@@ -14,6 +14,8 @@ from functools import wraps
 from flask import abort
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
+import email_validator
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
