@@ -89,9 +89,9 @@ class Comment(db.Model):
     post_id = db.Column(db.Integer, db.ForeignKey("blog_posts.id"))
     comment_author = db.relationship("User", back_populates="comments")
 
-#
-# db.create_all()
-# db.session.commit()
+
+db.create_all()
+db.session.commit()
 
 
 @login_manager.user_loader
